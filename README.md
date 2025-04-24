@@ -1,2 +1,6 @@
-# pygame-template
-My pygame template for my games
+# Pygame template
+I will publish it soon
+
+***Based on [***Shirraria***](https://github.com/koirdev/Shirraria)'s source code***
+
+
