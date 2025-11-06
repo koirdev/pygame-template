@@ -86,8 +86,11 @@ def MainMenu():
                     exit()
                     sys.exit()
 
-        # Render images
-            window.fill((255,255,255))    
+        # Render objects
+            window.fill((140, 140, 139))
+            fps_text = menu_font.render("FPS: " + str(clock.get_fps()), True, (255,255,255))
+            window.blit(fps_text, (0,50))
+            window.blit(MainMenuText,(0,0))    
 
         # Render Menu
             for i in range(len(items)):
@@ -130,8 +133,10 @@ def Scene1():
                     sys.exit()
 
         # Render objects
-            window.fill((125, 250, 135))
-            window.blit(FirstSceneText,(0,0))
+        fps_text = menu_font.render("FPS: " + str(clock.get_fps()), True, (255,255,255))
+        window.fill((125, 250, 135))
+        window.blit(fps_text, (0,50))
+        window.blit(FirstSceneText,(0,0))
 
         # Update screen
         pygame.display.update()
@@ -164,8 +169,10 @@ def Scene2():
                     sys.exit()
 
         # Render objects
-            window.fill((250, 125, 190))
-            window.blit(SecondSceneText,(0,0))
+        window.fill((250, 125, 190))
+        window.blit(SecondSceneText,(0,0))
+        fps_text = menu_font.render("FPS: " + str(clock.get_fps()), True, (255,255,255))
+        window.blit(fps_text, (0,50))
 
         # Update screen
         pygame.display.update()
